@@ -1,25 +1,79 @@
 <!DOCTYPE html>   
 <html>   
 <head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-sca<!-- le=1">  
+<link rel="stylesheet" href="style.css">
 
 <title> Login Page </title>  
 </head>    
-<body>    
-   <h1>Login</h1>  
-    <form>  
-        <div class="container box2">   
-            <label class="h1"><b>Email Address :</b> </label>   
-            <input  type="email" placeholder="Enter email" name="email" required>          
-            <label class="h1"><b>Password : </b></label>   
-            <input type="password" placeholder="Enter Password" maxLength = "8" name="password" required>          
-            <button class="button button2 logbutton" type="submit" value="Click"><a href="sidebar.html">Login</a> </button>     
-            <button type="button" class="cancelbtn button3 h1" > Cancel</button>
-            <br>  
-            <input type="checkbox" class="h1"><b>Remember me</b>
-            <a href="tel:+916353724887" target="_blank" ><h2>  Forgot password? </h2> </a>   
-        </div>   
-    </form>     
+<body> 
+    <div class="header">
+        <h1>Login</h1> 
+    </div>   
+  
+    <div class="mainContent">  
+        <div class="container boxBoder">
+            <div class="full">
+                <div class="name">
+                    <label class="h1"><b>Username :</b> </label>   
+                    <input type="text"  id="number" placeholder="Enter Username">
+                    <span id="error"></span>
+                </div>
+                <div class="passs">
+                    <label class="h1"><b>Password : </b></label>   
+                    <input type="password"   id="pass"  placeholder="Enter Password">
+                    <span id="passerror"></span> 
+                </div>
+                <div class="bot">
+                    <div class="but">
+                        <button class="button button2 logbutton" type="submit"  onclick="errorMessage(); emptyMsg();"  >Login</button>
+                    </div>
+                    <div class="cbut">
+                        <button type="submit" class="cancelbtn button3 h1" > Cancel</button>
+                    </div>
+                </div>
+               
+                <div class="chk">
+                    <input type="checkbox" class="h1"><b>Remember me</b>
+                </div>
+                <div class="forgot">
+                    <a href="#" target="_blank" ><h4>  Forgot password? </h4> </a>  
+                </div>  
+            </div> 
+          
+       
+        </div>  
+    </div> 
+    <script>
+         function errorMessage() {
+        var username =document.getElementById('number').value; 
+        var uname = document.getElementById("error")
+        if ((document.getElementById("number").value==""))
+        {
+            uname.textContent = "*Please enter usename"
+            uname.style.color = "red"
+        } else {
+            uname.textContent = ""
+        }
+        console.log(username);
+    }
+   
+
+    function emptyMsg(){
+        var userpassword =document.getElementById('pass').value; 
+        var upass = document.getElementById("passerror")
+        if ((document.getElementById("pass").value==""))
+        {
+            upass.textContent = "*Please enter password"
+            upass.style.color ="red"
+        }
+        else {
+            upass.textContent = ""
+        } 
+
+      console.log(userpassword);
+    }
+
+    </script>   
 </body>     
 </html>  

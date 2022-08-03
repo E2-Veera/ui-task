@@ -5,7 +5,7 @@ html{
 Body {  
    font-family: Calibri, Helvetica, sans-serif;  
    background-image: url("brownbg.jpg");
-   background-color: rgb(243, 131, 97);
+   background-color: rgb(255, 255, 255);
    height: 100%;
    width: 100%;
    background-position: center;
@@ -15,9 +15,27 @@ Body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   position: relative;
      }  
      
+     .header{
+      height: 20%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 0px 0px 0px 0px;
+     }
+     .mainContent{
+      height: 80%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+     }
 button {   
    padding: 10px 15px; /*log in button padding*/   
    font-size: 100%;  
@@ -48,15 +66,16 @@ button {
   color: white;
             }   
                      
- form {   
-        border:3px solid #000000;   
-        border-radius: 8%;
+  .formDesign{   
+       
+        height:60%;
+        width: 30%;
     }   
- input[type=email], input[type=password] {   
+ input[type=text], input[type=password] {   
         font-family: R A Std, monospace;
-        width: 100%;   
-        margin: 10px 0px;  
-        padding: 12px 10px;   
+      /*  
+        margin: 13px 0px;  
+        padding: 10px 0px;    */
         display: flex;
         align-content: center; 
         border: 3px solid #04918a;  
@@ -97,17 +116,29 @@ button {
         
      
  .container {   
-        padding: 50px;   
-        background-color: lightpink;
+        height: 70%;
+        width: 20%;
+        padding: 15px;
+        background-color: rgb(202, 202, 202);
         border-radius: 8%;
         opacity: 1.0px;  
     }   
-    .box2 {
+   /*  .box2 {
+      height: 100%;
+      width: 100%;
       background-color: rgba(255, 255, 255, 0.712);
       opacity: 1.2px;
       color: #1a1b1b;
   }
-      
+       */
+.boxBoder{
+       height: 70%;
+       width: 20%;
+       padding: 15px;
+       border: 3px solid black;
+       border-radius: 8%;
+}
+     
 
     .center-block {
         margin: auto;
@@ -115,7 +146,7 @@ button {
       }
 
       
-h2 {
+h4{
   color: #000000;
 }
 
@@ -126,4 +157,132 @@ h2 {
 }
 a{
   text-decoration: none;
+}
+
+.full{
+  height: 100%;
+  width: 100%;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.name{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ 
+}
+
+.passs{
+  height: 25%;
+  width: 100%;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+
+.but{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cbut{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.chk{
+  height: 10%;
+  width: 100%;
+}
+
+.forgot{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bot{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.name label{
+  height: 35%;
+  width: 100%;
+
+}
+label{
+  justify-content: left;
+}
+.name span{
+  height: 30%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.name input{
+  height: 35%;
+  width: 85%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+ 
+}
+
+.passs label{
+  height: 35%;
+  width: 100%;
+}
+
+.passs span{
+  height: 30%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.passs input{
+  height: 35%;
+  width: 85%;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
